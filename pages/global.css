@@ -1,0 +1,25 @@
+/*IMPORTA O GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*VÁRIÁVEIS NO CSS*/
+:root {
+    --bg-color: #0C1821; /*Cor do Fundo*/
+    --font-color: #e0e0e0; /*Cor da Fonte*/
+}
+
+/*RESET CSS*/
+* {
+    margin: 0; /*Zera a Margem*/
+    padding: 0; /*Zera o Padding*/
+    box-sizing: border-box; /*Evita espaçamentos para fora*/
+    font-family: "Gudea", sans-serif; /*Fonte do Google*/
+}
+
+/*CORPO DA PÁGINA*/
+body {
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha ao Centro - Eixo Perpendicular*/
+    background-color: var(--bg-color); /*Cor de Fundo*/
+    color: var(--font-color); /*Cor do Texto*/
+}

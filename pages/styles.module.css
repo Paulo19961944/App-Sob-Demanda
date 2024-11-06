@@ -1,0 +1,81 @@
+/*CABEÇALHO*/
+.headerContainer{
+    display: flex; /*Flexbox*/
+    justify-content: center; /*Alinha ao Centro - Eixo Principal*/
+    align-items: center; /*Alinha ao Centro - Eixo Perpendicular*/
+    height: 200px; /*Altura de 200px*/
+    width: 80vw; /*Largura de 80% da tela*/
+    font-size: 0.75rem; /*Tamanho da Fonte de 75% da raiz*/
+    font-style: italic; /*Fonte em Itálico*/
+    font-weight: 400; /*Peso da Fonte*/
+}
+
+/*CONTAINER PRINCIPAL*/
+.mainContainer{
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha ao Centro - Eixo Perpendicular*/
+}
+
+/*TÍTULO DO CONTEÚDO PRINCIPAL*/
+.mainContainer > .mainTitle{
+    font-size: 0.95rem; /*Tamanho da Fonte de 95% da Raiz do Documento*/
+    font-style: italic; /*Fonte em Itálico*/ 
+}
+
+/*BOTÕES*/
+.buttons{
+    background-color: transparent; /*Cor de Fundo Transparente*/
+    border: 1px solid #fff; /*Borda de 1px Branca*/
+    border-radius: 4px; /*Arredonda a Borda*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha ao Centro - Eixo Perpendicular*/
+    justify-content: center; /*Alinha ao Centro - Eixo Principal*/
+    gap: 8px; /*Espaçamento de 8px*/
+    width: 96px; /*Altura de 96px*/
+    height: 96px; /*Largura de 96px*/
+}
+
+/*IMAGEM DO RASPBERRY PI*/
+.raspberryImage{
+    width: 32px; /*Largura de 32px*/
+    height: 32px; /*Altura de 32px*/
+}
+
+/*HARDWARE, CONFIG e DEVICES*/
+.hardware, .config, .devices{
+    display: flex; /*Flexbox*/
+    justify-content: space-around; /*Alinha com um espaço entre eles*/
+    width: 216px; /*Largura de 216px*/
+    margin: 32px 0; /*Margem de 32px Superior e de 0px Inferior*/
+}
+
+/*TEXTOS HARDWARE, CONFIG e DEVICES*/
+.hardwareText, .configText, .devicesText{
+    font-size: 0.75rem; /*Tamanho da Fonte de 75% da Raiz do Documento*/
+    font-style: italic; /*Fonte em Itálico*/
+    color: #fff; /*Cor do Texto Branco*/
+}
+
+/*IMAGE DO ICONE DE MOBILE - APP SOB DEMANDA*/
+.mobileIconImage{
+    width: 64px; /*Largura de 64px*/
+    height: 64px; /*Altura de 64px*/
+    margin-right: 8px; /*Margem Lateral de 8px*/
+}
+
+/*RODAPÉ*/
+.footer{
+    display: flex; /*Flexbox*/
+    justify-content: center; /*Alinha ao Centro - Eixo Principal*/
+    align-items: center; /*Alinha ao Centro - Eixo Perpendicular*/
+    height: 96px; /*Altura de 96px*/
+    border-top: 1px solid rgba(255, 255, 255, 102); /*Borda Branca com um pouco de Transparência*/
+}
+
+/*TEXTOS DO RODAPÉ*/
+.footerText{
+    font-size: 0.625rem; /*Tamanho da Fonte de 62.5% do Elemento Raiz*/
+    font-style: italic; /*Fonte em Itálico*/
+}

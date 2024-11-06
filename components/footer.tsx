@@ -1,10 +1,11 @@
-"use client"
-import styles from '../app/styles.module.css';
+"use client"; // Define como Cliente
+import styles from '../pages/styles.module.css'; // Exporta os Estilos
 
-export default function Footer(){
-    return(
+// RENDERIZA O COMPONENTE
+export default function Footer() {
+    return (
         <footer className={styles.footer}>
             <small className={styles.footerText}>Copyright 2024 - PH Site Developer</small>
         </footer>
-    )
+    );
 }
