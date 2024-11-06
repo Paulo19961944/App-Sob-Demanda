@@ -38,14 +38,14 @@
     height: 32px;
 }
 
-.hardware{
+.hardware, .config{
     display: flex;
     justify-content: space-around;
     width: 216px;
     margin: 32px 0;
 }
 
-.hardwareText{
+.hardwareText, .configText, .devicesText{
     font-size: 0.75rem;
     font-style: italic;
     color: #fff;
