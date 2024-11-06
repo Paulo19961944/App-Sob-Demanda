@@ -56,3 +56,16 @@
     height: 64px;
     margin-right: 8px;
 }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96px;
+    border-top: 1px solid rgba(255, 255, 255, 102);
+}
+
+.footerText{
+    font-size: 0,625rem;
+    font-style: italic;
+}
