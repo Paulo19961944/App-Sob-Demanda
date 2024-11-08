@@ -4,7 +4,7 @@
     justify-content: center; /*Alinha ao Centro - Eixo Principal*/
     align-items: center; /*Alinha ao Centro - Eixo Perpendicular*/
     height: 200px; /*Altura de 200px*/
-    width: 80vw; /*Largura de 80% da tela*/
+    width: 100vw; /*Largura de 80% da tela*/
     font-size: 0.75rem; /*Tamanho da Fonte de 75% da raiz*/
     font-style: italic; /*Fonte em Itálico*/
     font-weight: 400; /*Peso da Fonte*/
@@ -78,4 +78,88 @@
 .footerText{
     font-size: 0.625rem; /*Tamanho da Fonte de 62.5% do Elemento Raiz*/
     font-style: italic; /*Fonte em Itálico*/
+}
+
+@media(min-width: 560px){
+    .mobileIconImage{
+        width: 80px;
+        height: 80px;
+        margin-right: 32px;
+    }
+
+    .headerContainer, .hardwareText, .configText, .devicesText{
+        font-size: 0.88rem;
+    }
+
+    .mainContainer > .mainTitle{
+        font-size: 1.12rem;
+    }
+
+    .buttons{
+        width: 120px;
+        height: 120px;
+        gap: 16px;
+    }
+
+    .hardware, .config, .devices{
+        width: 280px;
+    }
+
+    .footer{
+        height: 120px;
+    }
+
+    .footerText{
+        font-size: 0.88rem;
+    }
+}
+
+@media(min-width: 768px){
+    .mobileIconImage{
+        width: 96px;
+        height: 96px;
+    }   
+
+    .headerContainer, .hardwareText, .configText, .devicesText{
+        font-size: 1rem;
+    }
+
+    .mainContainer > .mainTitle{
+        font-size: 1.32rem;
+    }
+
+    .buttons{
+        width: 160px;
+        height: 160px;
+    }
+
+    .hardware, .config, .devices{
+        width: 400px;
+    }
+
+    .raspberryImage{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 1024px){
+    .mobileIconImage{
+        width: 120px;
+        height: 120px;
+        margin-right: 96px;
+    }
+
+    .headerContainer, .hardwareText, .configText, .devicesText{
+        font-size: 1.06rem;
+    }
+
+    .mainContainer > .mainTitle{
+        font-size: 1.5rem;
+        margin: 32px 0;
+    }
+
+    .hardware, .config, .devices{
+        width: 440px;
+    }   
 }

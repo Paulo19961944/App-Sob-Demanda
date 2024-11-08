@@ -15,11 +15,36 @@
     font-family: "Gudea", sans-serif; /*Fonte do Google*/
 }
 
-/*CORPO DA PÁGINA*/
-body {
-    display: flex; /*Flexbox*/
-    flex-direction: column; /*Alinha em Colunas*/
-    align-items: center; /*Alinha ao Centro - Eixo Perpendicular*/
-    background-color: var(--bg-color); /*Cor de Fundo*/
-    color: var(--font-color); /*Cor do Texto*/
+/* CORREÇÃO PARA O __NEXT */
+#__next {
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    min-height: 100%; /* Garante que o __next ocupe toda a altura da tela */
+    display: flex; /* Usa Flexbox para o layout */
+    flex-direction: column; /* Empilha o conteúdo em colunas */
+}
+
+/* CORPO DA PÁGINA */
+html, body {
+    overflow-x: hidden;
+    height: 100%; /* Garante que o corpo ocupe 100% da altura da janela */
+    margin: 0; /* Remove margens automáticas */
+}
+
+/* Conteúdo principal da página */
+main {
+    flex: 1; /* Faz o conteúdo ocupar o restante do espaço entre o topo e o footer */
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+    padding: 1rem; /* Adiciona algum padding para que o conteúdo não fique colado nas bordas */
+    box-sizing: border-box; /* Garante que o padding seja considerado no cálculo da largura */
+}
+
+/* Estilos do footer */
+footer {
+    width: 100%; /* O footer ocupa toda a largura da tela */
+    color: var(--font-color); /* Cor do texto no footer */
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem; /* Espaçamento interno */
+    background-color: var(--bg-color); /* Fundo do footer */
 }
