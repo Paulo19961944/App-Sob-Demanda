@@ -1,171 +1,270 @@
 /*CABEÇALHO*/
-.headerContainer{
-    display: flex; /*Flexbox*/
-    justify-content: center; /*Alinha ao Centro - Eixo Principal*/
-    align-items: center; /*Alinha ao Centro - Eixo Perpendicular*/
-    height: 200px; /*Altura de 200px*/
-    width: 100vw; /*Largura de 80% da tela*/
-    font-size: 0.75rem; /*Tamanho da Fonte de 75% da raiz*/
-    font-style: italic; /*Fonte em Itálico*/
-    font-weight: 400; /*Peso da Fonte*/
+.headerContainer {
+    display: flex;
+    /*Flexbox*/
+    justify-content: center;
+    /*Alinha ao Centro - Eixo Principal*/
+    align-items: center;
+    /*Alinha ao Centro - Eixo Perpendicular*/
+    height: 200px;
+    /*Altura de 200px*/
+    width: 100vw;
+    /*Largura de 80% da tela*/
+    font-size: 0.75rem;
+    /*Tamanho da Fonte de 75% da raiz*/
+    font-style: italic;
+    /*Fonte em Itálico*/
+    font-weight: 400;
+    /*Peso da Fonte*/
 }
 
 /*CONTAINER PRINCIPAL*/
-.mainContainer{
-    display: flex; /*Flexbox*/
-    flex-direction: column; /*Alinha em Colunas*/
-    align-items: center; /*Alinha ao Centro - Eixo Perpendicular*/
+.mainContainer {
+    display: flex;
+    /*Flexbox*/
+    flex-direction: column;
+    /*Alinha em Colunas*/
+    align-items: center;
+    /*Alinha ao Centro - Eixo Perpendicular*/
 }
 
 /*TÍTULO DO CONTEÚDO PRINCIPAL*/
-.mainContainer > .mainTitle{
-    font-size: 0.95rem; /*Tamanho da Fonte de 95% da Raiz do Documento*/
-    font-style: italic; /*Fonte em Itálico*/ 
+.mainContainer>.mainTitle {
+    font-size: 0.95rem;
+    /*Tamanho da Fonte de 95% da Raiz do Documento*/
+    font-style: italic;
+    /*Fonte em Itálico*/
 }
 
 /*BOTÕES*/
-.buttons{
-    background-color: transparent; /*Cor de Fundo Transparente*/
-    border: 1px solid #fff; /*Borda de 1px Branca*/
-    border-radius: 4px; /*Arredonda a Borda*/
-    display: flex; /*Flexbox*/
-    flex-direction: column; /*Alinha em Colunas*/
-    align-items: center; /*Alinha ao Centro - Eixo Perpendicular*/
-    justify-content: center; /*Alinha ao Centro - Eixo Principal*/
-    gap: 8px; /*Espaçamento de 8px*/
-    width: 96px; /*Altura de 96px*/
-    height: 96px; /*Largura de 96px*/
+.buttonInfinityDevices,
+.buttonDevices,
+.buttonPersonalized,
+.buttonDefault,
+.buttonArduino,
+.buttonRaspberryPi {
+    background-color: transparent;
+    /*Cor de Fundo Transparente*/
+    border: 1px solid #fff;
+    /*Borda de 1px Branca*/
+    border-radius: 4px;
+    /*Arredonda a Borda*/
+    display: flex;
+    /*Flexbox*/
+    flex-direction: column;
+    /*Alinha em Colunas*/
+    align-items: center;
+    /*Alinha ao Centro - Eixo Perpendicular*/
+    justify-content: center;
+    /*Alinha ao Centro - Eixo Principal*/
+    gap: 8px;
+    /*Espaçamento de 8px*/
+    width: 96px;
+    /*Altura de 96px*/
+    height: 96px;
+    /*Largura de 96px*/
 }
 
-/*IMAGEM DO RASPBERRY PI*/
-.raspberryImage, .arduinoImage, .defaultImage, .personalizedImage{
-    width: 32px; /*Largura de 32px*/
-    height: 32px; /*Altura de 32px*/
-}
-
-.buttons:hover{
+.buttonInfinityDevices:hover,
+.buttonDevices:hover,
+.buttonPersonalized:hover,
+.buttonDefault:hover,
+.buttonArduino:hover,
+.buttonRaspberryPi:hover {
     background-color: #307473;
     border: none;
+    transition: ease-in-out 0.5s;
     cursor: pointer;
 }
 
+/*IMAGEM DO RASPBERRY PI*/
+.raspberryImage,
+.arduinoImage,
+.defaultImage,
+.personalizedImage,
+.devicesImage,
+.infinityDevicesImage {
+    width: 32px;
+    /*Largura de 32px*/
+    height: 32px;
+    /*Altura de 32px*/
+}
+
+.buttons:hover {
+    background-color: #307473;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out 0.6s;
+}
+
 /*HARDWARE, CONFIG e DEVICES*/
-.hardware, .config, .devices{
-    display: flex; /*Flexbox*/
-    justify-content: space-around; /*Alinha com um espaço entre eles*/
-    width: 216px; /*Largura de 216px*/
-    margin: 32px 0; /*Margem de 32px Superior e de 0px Inferior*/
+.hardware,
+.config,
+.devices {
+    display: flex;
+    /*Flexbox*/
+    justify-content: space-around;
+    /*Alinha com um espaço entre eles*/
+    width: 216px;
+    /*Largura de 216px*/
+    margin: 32px 0;
+    /*Margem de 32px Superior e de 0px Inferior*/
 }
 
 /*TEXTOS HARDWARE, CONFIG e DEVICES*/
-.hardwareText, .configText, .devicesText{
-    font-size: 0.75rem; /*Tamanho da Fonte de 75% da Raiz do Documento*/
-    font-style: italic; /*Fonte em Itálico*/
-    color: #fff; /*Cor do Texto Branco*/
+.hardwareText,
+.configText,
+.devicesText {
+    font-size: 0.75rem;
+    /*Tamanho da Fonte de 75% da Raiz do Documento*/
+    font-style: italic;
+    /*Fonte em Itálico*/
+    color: #fff;
+    /*Cor do Texto Branco*/
 }
 
 /*IMAGE DO ICONE DE MOBILE - APP SOB DEMANDA*/
-.mobileIconImage{
-    width: 64px; /*Largura de 64px*/
-    height: 64px; /*Altura de 64px*/
-    margin-right: 8px; /*Margem Lateral de 8px*/
+.mobileIconImage {
+    width: 64px;
+    /*Largura de 64px*/
+    height: 64px;
+    /*Altura de 64px*/
+    margin-right: 8px;
+    /*Margem Lateral de 8px*/
 }
 
 /*RODAPÉ*/
-.footer{
-    display: flex; /*Flexbox*/
-    justify-content: center; /*Alinha ao Centro - Eixo Principal*/
-    align-items: center; /*Alinha ao Centro - Eixo Perpendicular*/
-    height: 96px; /*Altura de 96px*/
-    border-top: 1px solid rgba(255, 255, 255, 102); /*Borda Branca com um pouco de Transparência*/
+.footer {
+    display: flex;
+    /*Flexbox*/
+    justify-content: center;
+    /*Alinha ao Centro - Eixo Principal*/
+    align-items: center;
+    /*Alinha ao Centro - Eixo Perpendicular*/
+    height: 96px;
+    /*Altura de 96px*/
+    border-top: 1px solid rgba(255, 255, 255, 102);
+    /*Borda Branca com um pouco de Transparência*/
 }
 
 /*TEXTOS DO RODAPÉ*/
-.footerText{
-    font-size: 0.625rem; /*Tamanho da Fonte de 62.5% do Elemento Raiz*/
-    font-style: italic; /*Fonte em Itálico*/
+.footerText {
+    font-size: 0.625rem;
+    /*Tamanho da Fonte de 62.5% do Elemento Raiz*/
+    font-style: italic;
+    /*Fonte em Itálico*/
 }
 
-@media(min-width: 560px){
-    .mobileIconImage{
+@media(min-width: 560px) {
+    .mobileIconImage {
         width: 80px;
         height: 80px;
         margin-right: 32px;
     }
 
-    .headerContainer, .hardwareText, .configText, .devicesText{
+    .headerContainer,
+    .hardwareText,
+    .configText,
+    .devicesText {
         font-size: 0.88rem;
     }
 
-    .mainContainer > .mainTitle{
+    .mainContainer>.mainTitle {
         font-size: 1.12rem;
     }
 
-    .buttons{
+    .buttonInfinityDevices,
+    .buttonDevices,
+    .buttonPersonalized,
+    .buttonDefault,
+    .buttonArduino,
+    .buttonRaspberryPi {
         width: 120px;
         height: 120px;
         gap: 16px;
     }
 
-    .hardware, .config, .devices{
+    .hardware,
+    .config,
+    .devices {
         width: 280px;
     }
 
-    .footer{
+    .footer {
         height: 120px;
     }
 
-    .footerText{
+    .footerText {
         font-size: 0.88rem;
     }
 }
 
-@media(min-width: 768px){
-    .mobileIconImage{
+@media(min-width: 768px) {
+    .mobileIconImage {
         width: 96px;
         height: 96px;
-    }   
+    }
 
-    .headerContainer, .hardwareText, .configText, .devicesText{
+    .headerContainer,
+    .hardwareText,
+    .configText,
+    .devicesText {
         font-size: 1rem;
     }
 
-    .mainContainer > .mainTitle{
+    .mainContainer>.mainTitle {
         font-size: 1.32rem;
     }
 
-    .buttons{
+    .buttonInfinityDevices,
+    .buttonDevices,
+    .buttonPersonalized,
+    .buttonDefault,
+    .buttonArduino,
+    .buttonRaspberryPi {
         width: 160px;
         height: 160px;
     }
 
-    .hardware, .config, .devices{
+    .hardware,
+    .config,
+    .devices {
         width: 400px;
     }
 
-    .raspberryImage{
+    .raspberryImage,
+    .arduinoImage,
+    .defaultImage,
+    .personalizedImage,
+    .devicesImage,
+    .infinityDevicesImage {
         width: 40px;
         height: 40px;
     }
 }
 
-@media (min-width: 1024px){
-    .mobileIconImage{
+@media (min-width: 1024px) {
+    .mobileIconImage {
         width: 120px;
         height: 120px;
         margin-right: 96px;
     }
 
-    .headerContainer, .hardwareText, .configText, .devicesText{
+    .headerContainer,
+    .hardwareText,
+    .configText,
+    .devicesText {
         font-size: 1.06rem;
     }
 
-    .mainContainer > .mainTitle{
+    .mainContainer>.mainTitle {
         font-size: 1.5rem;
         margin: 32px 0;
     }
 
-    .hardware, .config, .devices{
+    .hardware,
+    .config,
+    .devices {
         width: 440px;
-    }   
+    }
 }
