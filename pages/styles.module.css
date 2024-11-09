@@ -71,8 +71,6 @@
 .buttonDefault:hover,
 .buttonArduino:hover,
 .buttonRaspberryPi:hover {
-    background-color: #307473;
-    border: none;
     transition: ease-in-out 0.5s;
     cursor: pointer;
 }
@@ -90,12 +88,6 @@
     /*Altura de 32px*/
 }
 
-.buttons:hover {
-    background-color: #307473;
-    border: none;
-    cursor: pointer;
-    transition: ease-in-out 0.6s;
-}
 
 /*HARDWARE, CONFIG e DEVICES*/
 .hardware,
@@ -153,6 +145,20 @@
     /*Tamanho da Fonte de 62.5% do Elemento Raiz*/
     font-style: italic;
     /*Fonte em Itálico*/
+}
+
+.selected {
+    background-color: #307473;
+    border: none;
+}
+
+.finalizarButton{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: underline;
+    margin: 48px 0;
 }
 
 @media(min-width: 560px) {
