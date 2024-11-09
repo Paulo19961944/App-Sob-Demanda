@@ -12,18 +12,18 @@ export default function Main() {
                     <p className={styles.hardwareText}>Raspberry Pi</p>
                 </button>
                 <button className={styles.buttons}>
-                    <img src="/images/arduino-icon.png" alt="Arduino" className={styles.raspberryImage} />
+                    <img src="/images/arduino-icon.png" alt="Arduino" className={styles.arduinoImage} />
                     <p className={styles.hardwareText}>Arduino</p>
                 </button>
             </article>
             <h2 className={styles.mainTitle}>Passo 2: Escolha as Configurações</h2>
             <article className={styles.config}>
                 <button className={styles.buttons}>
-                    <img src="/images/Empresa_Icon.png" alt="Padrão" className={styles.raspberryImage} />
+                    <img src="/images/Empresa_Icon.png" alt="Padrão" className={styles.defaultImage} />
                     <p className={styles.configText}>Padrão</p>
                 </button>
                 <button className={styles.buttons}>
-                    <img src="/images/Personalizado-Icon.png" alt="Personalizado" className={styles.raspberryImage} />
+                    <img src="/images/Personalizado-Icon.png" alt="Personalizado" className={styles.personalizedImage} />
                     <p className={styles.configText}>Personalizado</p>
                 </button>
             </article>

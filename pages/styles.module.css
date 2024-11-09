@@ -38,9 +38,15 @@
 }
 
 /*IMAGEM DO RASPBERRY PI*/
-.raspberryImage{
+.raspberryImage, .arduinoImage, .defaultImage, .personalizedImage{
     width: 32px; /*Largura de 32px*/
     height: 32px; /*Altura de 32px*/
+}
+
+.buttons:hover{
+    background-color: #307473;
+    border: none;
+    cursor: pointer;
 }
 
 /*HARDWARE, CONFIG e DEVICES*/
