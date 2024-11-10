@@ -1,16 +1,27 @@
 "use client"; // Define como Cliente
 import styles from '../pages/styles.module.css'; // Importa os Estilos
+import { useRouter } from 'next/router';
 import { useState } from "react";
 import { 
     selecionarHardware, 
     selecionarConfig, 
     selecionarDispositivos, 
-    precoTotal, 
-    abrirModalPreco, 
-    fecharModal 
+    precoTotal,
+    salvarNoFirebase
 } from './mainLogic'; // Importa as funções do TypeScript
 
 export default function Main() {
+    const router = useRouter();
+    const handleNavigate = () => {
+        if (hardware && config && devices) {
+            salvarNoFirebase(); // Salva no Firebase antes de redirecionar
+            router.push('/checkout'); // Vai para a página de checkout
+        } else {
+            alert('Por favor, selecione todas as opções antes de continuar.');
+        }
+    };
+    
+
     // Estados para armazenar os botões selecionados
     const [hardware, setHardware] = useState<"raspberry" | "arduino" | null>(null);
     const [config, setConfig] = useState<"default" | "personalized" | null>(null);
@@ -87,7 +98,7 @@ export default function Main() {
                     <p className={styles.devicesText}>Ilimitado</p>
                 </button>
             </article>
-            <button onClick={abrirModalPreco} className={styles.finalizarButton}>Ver Preço Aproximado</button>
+            <button onClick={handleNavigate} className={styles.finalizarButton}>Ver Preço Aproximado</button>
         </main>
     );
 }
