@@ -37,7 +37,7 @@ export default function CheckoutView() {
     if (error) return <div>{error}</div>;
 
     return (
-        <div className={styles.checkoutView}>
+        <main className={styles.checkoutView}>
             <h2 className={styles.checkoutTitle}>Resumo da Compra</h2>
             <p className={styles.checkoutText}>Confira os detalhes do seu pedido abaixo:</p>
 
@@ -57,6 +57,6 @@ export default function CheckoutView() {
             </div>
 
             {/* Aqui você pode adicionar outros elementos de checkout como botões, etc */}
-        </div>
+        </main>
     );
 }
