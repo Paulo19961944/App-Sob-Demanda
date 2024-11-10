@@ -16,6 +16,8 @@
     /*Fonte em Itálico*/
     font-weight: 400;
     /*Peso da Fonte*/
+    margin-bottom: 2rem; 
+    /* Espaço abaixo do header */
 }
 
 /*CONTAINER PRINCIPAL*/
@@ -136,6 +138,8 @@
     /*Altura de 96px*/
     border-top: 1px solid rgba(255, 255, 255, 102);
     /*Borda Branca com um pouco de Transparência*/
+    margin-top: 2rem; 
+    /* Espaço acima do footer */
 }
 
 /*TEXTOS DO RODAPÉ*/
@@ -191,35 +195,58 @@
     gap: 1rem; /* Espaçamento entre os elementos */
   }
   
-  /* Título do Checkout */
-  .checkoutTitle {
+  /* Caixa do Resumo do Pedido */
+.checkoutView {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    background-color: transparent; /* Fundo semi-transparente para destacar a caixa */
+    border-radius: 8px;
+    padding: 2rem 3rem;
+    width: 80%; /* Ocupa 80% da largura da tela */
+    max-width: 600px; /* Limite máximo de largura */
+    color: #fff; /* Cor do texto branca */
+    font-family: 'Gudea', sans-serif; /* Fonte personalizada */
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 3rem auto; /* Margem superior e inferior */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+    gap: 1rem; /* Espaçamento entre os elementos */
+}
+
+
+/* Título do Checkout */
+.checkoutTitle {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem; /* Espaçamento abaixo do título */
     color: #fff; /* Cor branca */
-  }
-  
-  /* Texto Descritivo */
-  .checkoutText {
+}
+
+/* Texto Descritivo */
+.checkoutText {
     font-size: 1rem;
     margin-bottom: 2rem;
     color: #ddd; /* Texto mais suave */
-  }
-  
-  /* Exibição do Valor Total */
-  .checkoutValorTotal {
+}
+
+/* Exibição do Valor Total */
+.checkoutValorTotal {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 1rem;
     color: #4CAF50; /* Cor verde para destacar o preço */
     transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  /* Estilo de transição quando o valor mudar */
-  .checkoutValorTotalChanged {
+}
+
+/* Estilo de transição quando o valor mudar */
+.checkoutValorTotalChanged {
     transform: scale(1.1); /* Aumenta suavemente o tamanho */
     color: #FF9800; /* Cor laranja quando o preço for alterado */
-  }
+}
+
   
 
 @media(min-width: 560px) {
