@@ -6,15 +6,14 @@ import {
     selecionarHardware, 
     selecionarConfig, 
     selecionarDispositivos, 
-    precoTotal,
     salvarNoFirebase
 } from './mainLogic'; // Importa as funções do TypeScript
 
 export default function Main() {
     const router = useRouter();
-    const handleNavigate = () => {
+    const handleNavigate = async () => {
         if (hardware && config && devices) {
-            salvarNoFirebase(); // Salva no Firebase antes de redirecionar
+            await salvarNoFirebase(); // Espera salvar o pedido no Firebase
             router.push('/checkout'); // Vai para a página de checkout
         } else {
             alert('Por favor, selecione todas as opções antes de continuar.');
